@@ -37,7 +37,16 @@ nav {
     justify-content: center;
     height: 100%;
   }
-  
+  li.nav-item.current::after {
+    width: 50px;
+    height: 2px;
+    display: block;
+    bottom: 10px;
+    right: calc(50% - 25px);
+    background: #009999;
+    position: absolute;
+    content: '';
+  }
   li.nav-item:hover:after {
     width: 50px;
     height: 2px;

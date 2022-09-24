@@ -1,11 +1,16 @@
 <nav>
   <ul>
     <li class="logo">
-      <span>{{ site.data.general.logo | xml_escape | textilize }}</span>
+      <span>
+        <a href="/index.html">
+          {{ site.data.general.logo | xml_escape | textilize }}
+        </a>
+      </span>
+      
     </li>
     {% for item in site.data.navigation %}
-    <li class="nav-item">
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name | xml_escape | textilize }}</a>      
+    <li {% if page.url == item.link %}class="nav-item current"{% else %}class="nav-item"{% endif %}>
+      <a href="{{ item.link }}">{{ item.name | xml_escape | textilize }}</a>      
     </li>
     {% endfor %}
     <li class="contact-button">
