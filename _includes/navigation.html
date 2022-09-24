@@ -9,7 +9,8 @@
       
     </li>
     {% for item in site.data.navigation %}
-    <li {% if page.url == item.link %}class="nav-item current"{% else %}class="nav-item"{% endif %}>
+    {% capture current_page %}{{'/'}}{{item.link}}{% endcapture %}
+    <li {% if page.url == current_page %}class="nav-item current"{% else %}class="nav-item"{% endif %}>
       <a href="{{ item.link }}">{{ item.name | xml_escape | textilize }}</a>      
     </li>
     {% endfor %}
