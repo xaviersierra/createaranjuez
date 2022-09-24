@@ -6,13 +6,13 @@
           {{ site.data.general.logo | xml_escape | textilize }}
         </a>
       </span>
-      
+
     </li>
     {% for item in site.data.navigation %}
     {% capture current_link %}{{ item.link | split:'.' | first }}{% endcapture %}
     {% capture current_page %}{{ page.path | split:'.' | first }}{% endcapture %}
-    <li {% if current_link == current_page %}class="nav-item current"{% else %}class="nav-item"{% endif %}>
-      <a href="{{ item.link }}">{{ item.name | xml_escape | textilize }}</a>      
+    <li {% if current_link==current_page %}class="nav-item current" {% else %}class="nav-item" {% endif %}>
+      <a href="{{ item.link }}">{{ item.name | xml_escape | textilize }}</a>
     </li>
     {% endfor %}
     <li class="contact-button">

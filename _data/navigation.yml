@@ -1,4 +1,4 @@
-- name: Sobre Nosotras
+- name: Sobre nosotras
   link: about.html
 - name: Bebés en movimiento
   link: movement.html
@@ -6,3 +6,5 @@
   link: psychomotricity.html
 - name: Talleres de juego
   link: workshops.html
+- name: Más actividades
+  link: more.html
