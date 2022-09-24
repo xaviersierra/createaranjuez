@@ -1,0 +1,37 @@
+title: Talleres de juego
+services:
+  - name: Instalaciones de juego.
+  - name: Arte y literatura
+  - name: Juegos de exploración, experimentación y sensorialidad.
+  - name: Trazos en movimiento.
+sections:
+  - title: Qué entendemos por juego
+    texts:
+      - type: quotation
+        text: |
+          “Jugar es entonces una fuerza fundamental de la vida. Jugar es actuar, es transformar el mundo, es vivir y existir transformando la realidad apropiándose así del mundo”.
+      - type: quotation
+        text: |
+          “Es jugando y solamente jugando que el individuo, niño o adulto, es capaz de ser creativo y de usar su personalidad completa. Es solo siendo creativo que el individuo descubre su yo”.
+      - type: reference
+        text: |
+          (Winnicot,1975)
+  - title: El juego en Créate
+    texts:
+      - type: normal   
+        text: |
+          En Créate entendemos el juego como una <span>necesidad vital</span> de las niñas y niños que supone la manera de <span>ser</span> y de <span>estar</span> de los mismos en su tránsito por la infancia.
+      - type: normal
+        text: |
+          En el espacio de Créate queremos poner de nuevo la vida en el centro y, desde la conexión con su semilla más valiosa, la infancia, recuperar un espacio y un tiempo de calidad  para jugar, como respuesta a esta  necesidad vital, y para crecer de manera equilibrada y saludable.
+      - type: normal
+        text: |
+          Créate es un espacio educativo, aunque no de enseñanza, puesto que la finalidad es el juego en sí mismo y la vivencia que emana, a través de la curiosidad primigenia, desde el mundo interior y provoca la expresión simbólica del ser profundo en el estar (jugando) a través de la acción con el cuerpo, la interacción con los objetos y la interrelación con los demás.
+      - type: normal
+        text: |
+          Las adultas nos situamos ante el juego de los peques como referentes y acompañamos sus acciones de manera respetuosa, sosteniendo, a través del vínculo,  el espacio físico y emocional e interviniendo, sin interferir, cuando la situación lo requiere, en un ambiente de seguridad y confianza en sus propias posibilidades de acción, expresión y creación.
+      - type: normal
+        text: |
+          El juego en Créate implica seguridad, curiosidad, movimiento, manipulación, descubrimiento, sensorialidad, relación, colaboración, canalización emocional, expresión simbólica, crecimiento interior, pensamiento divergente, creatividad y alegría.  
+ 
+

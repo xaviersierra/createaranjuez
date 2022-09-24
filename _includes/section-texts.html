@@ -1,0 +1,5 @@
+<div class="section-texts">
+    {% for st in include.texts %}
+        <p class="{{ st.type }}">{{ st.text }}</p>
+    {% endfor %}
+</div>

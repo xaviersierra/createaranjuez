@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li class="logo">
+      <span>{{ site.data.general.logo | xml_escape | textilize }}</span>
+    </li>
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name | xml_escape | textilize }}</a>      
+    </li>
+    {% endfor %}
+    <li class="contact-button">
+      <div>{{ site.data.general.contact }}</sdiv>
+    </li>
+  </ul>
+</nav>

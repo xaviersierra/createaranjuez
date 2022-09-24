@@ -1,0 +1,10 @@
+<div class="sections">
+{% for section in include.sections %}
+    <div class="section">
+        <div class="section-header">
+            <h1>{{ section.title }}</h1>
+        </div>
+        {% include section-texts.html texts=section.texts %} 
+    </div>
+{% endfor %}
+</div>
