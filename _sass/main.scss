@@ -64,8 +64,23 @@ nav {
   }
 
 
-  li.contact-button div{
+  li.contact-button > div{
     height: 30px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
   }
-  
+  li.contact-button::before{
+    width: 100px;
+    height: 33px;
+    display: block;
+    content: '';
+    right: calc(50% - 50px);
+    top: calc(50% - 15px);
+    background: #5f497a;
+    position: absolute;
+    border-radius: 5px;
+  }
 }
