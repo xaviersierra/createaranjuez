@@ -1,31 +1,66 @@
+$content-max-width: 1920px;
+$menu-background-color: #fdf7fc;
+$menu-text-color: #322640;
+$menu-hover-line: #009999;
+$menu-height: 90px;
+$menu-font-size: 1.2rem;
+$menu-familty: Poppins, Arial, Helvetica, sans-serif;
+$font-weight: 500;
+$banner-text-color: #fdf7fc;
+$font-familiy: Poppins, Arial, Helvetica, sans-serif;
+
 body {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: $font-familiy;
   width: 100%;
 }
 
-div#container{
-  width: 1717px;
+.debug-div {
+  border: red;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div#container {
+  max-width: $content-max-width;
+  width: 100%;
   position: relative;
   margin: auto;
   display: block;
+  padding-top: $menu-height;
+}
+
+div#container::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $menu-background-color;
+  height: $menu-height;
+  content: '';
 }
 
 nav {
+  height: $menu-height;
+  background-color: $menu-background-color;
+  max-width: $content-max-width;
   width: 100%;
-  display: block;
-  height: 90px;
-  background-color: #fdf7fc;
-  width: 1717px;  
-  color: #5f497a;
-  position: relative;
-  margin: auto;
+  color: $menu-text-color;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 
   ul {
     list-style-type: none;
     margin: 0;
     height: 100%;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: $menu-font-size
   }
 
   li {
@@ -33,17 +68,15 @@ nav {
     display: inline-block;
     padding: 0 11px;
     overflow: visible;
-    line-height: 5.7em;
+    line-height: 5.0em;
     position: relative;
+    font-weight: 500;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
   }
 
   li a {
     text-align: center;
     text-decoration: none;
-    color: #322640;
-    font-weight: 500;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 18px;
     justify-content: center;
     height: 100%;
   }
@@ -51,10 +84,8 @@ nav {
   li.logo {
     width: 262px;
     background-color: #fae1f4;
-  }
-
-  li.nav-item:nth-child(2) {
-    margin-left: 256px;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   li.nav-item.current::after {
@@ -78,17 +109,16 @@ nav {
     position: absolute;
     content: '';
   }
+  li:last-child {
+    margin-right: 3vw;
+  }
 
   li.contact-button>div {
     height: 30px;
     width: 126px;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
     text-align: right;
     color: #fdf7fc;
     position: relative;
-
   }
 
   li.contact-button::before {
@@ -101,7 +131,150 @@ nav {
     background: #5f497a;
     position: absolute;
     border-radius: 5px;
+  }
+  
+}
 
+.home-banner {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-image: url("../images/home-banner.jpg");
+  color: $banner-text-color;
+  font-family: $font-familiy;
+  
+  h1 {
+    position: absolute;
+    top: calc(35vh - 90px);
+    left: 5vw;
+    font-size: 9rem;
+    font-weight: 700;
   }
 
+  h2 {
+    position: absolute;
+    top: calc(75vh - 90px);
+    left: 5vw;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.title-container {    
+  height: calc(30vh - 90px);
+  
+  h1 {
+    position: relative;
+    top: 0;
+    padding-left: 5vw;      
+    font-size: 5rem;
+    font-weight: 700;
+    color: #5f497a;
+    line-height: 2.0em;
+  }
+
+  h1:after {
+    content: '';
+    width: 75px;
+    height: 2px;
+    display: block;
+    bottom: 25px;
+    background: #009999;
+    position:absolute;
+    
+  }
+}
+
+.home-content {
+  position: relative;
+  width: 100%;  
+  display: block;
+  height: max-content;
+  
+  font-family: $font-familiy;
+
+  .bullet-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .bullets {
+      grid-column: 1;
+      grid-row: 1;
+      padding-left: 10vh;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: #322640;
+
+      li {
+        list-style: circle;
+        margin-bottom: 10px;
+      }
+    }
+    .bullet-photo {
+      background-image: url('../images/home-content.jpg');
+      grid-column: 2;
+      grid-row: 1;
+      border-radius: 5px;
+    }
+  }
+}
+
+.services-container {
+  font-family: $font-familiy;
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+
+    div.movement {
+      background-image: url('../images/movement-service.jpg');
+    }
+    div.more {
+      background-image: url('../images/more-service.jpg');
+    }    
+    div.psychomotricity {
+      background-image: url('../images/psychomotricity-service.jpg');
+    }
+
+    div.workshop {
+      background-image: url('../images/workshop-service.jpg');
+    }
+
+    div {
+      height: 40vh;
+      background-repeat: no-repeat;
+      margin: 50px;
+      background-size: 100%;
+      h1 {
+        margin-left: 3vw;
+        margin-top: 15vw;
+        color: #fdf7fc;
+        font-size: 1.3rem;
+        font-weight: 700;
+        
+      }
+    }    
+  }
+}
+
+#footer {
+  background-color: $menu-background-color;
+  color: $menu-text-color;
+  height: $menu-height;
+  
+  max-width: $content-max-width;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: $font-familiy;
+
+  .copyright {
+    text-align: right;
+    line-height: 5.0em;
+    font-size: 1.2rem;
+    color: #9e8fae;
+    padding-right: 3vw;
+  }
 }
