@@ -3,8 +3,8 @@ title: Bebés en movimiento
 layout: default
 ---
 <div>
-  <div>
-    <div>
+  <div class="movement-banner-container">
+    <div class="title-container">
       <h1>{{ site.data.movement.title}}</h1>
       <span>{{ site.data.movement.highlight }}</span>
     </div>

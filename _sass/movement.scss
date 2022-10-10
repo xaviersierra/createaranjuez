@@ -1,0 +1,24 @@
+.movement-banner-container {
+    font-family: $font-familiy;
+
+    .title-container {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+
+        h1:after {
+            bottom: 65px;
+        }
+
+        span {
+            color: #9f92af;
+            font-size: 3rem;
+            font-weight: 600;
+            padding-top: 69px;
+            padding-left: 20px;
+            height: calc(30vh - 21px);
+        }
+
+    }
+    
+}

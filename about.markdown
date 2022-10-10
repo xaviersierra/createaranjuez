@@ -3,8 +3,8 @@ title: Sobre nosotras
 layout: default
 ---
 
-<div>
-  <div>
+<div class="about-us-container">
+  <div class="title-container">
     <h1>{{ site.data.about.title }}</h1>
     <p>{{ site.data.about.summary}}</p>
   </div>
@@ -12,8 +12,8 @@ layout: default
      <img alt="group picture">
   </div>
 </div>
-<div>
-  <div>
+<div class="about-us-content-container">
+  <div class="title-container">
     <h1>{{ site.data.about.subTitle}}</h1>
   </div>
   {% for item in site.data.about.us %}

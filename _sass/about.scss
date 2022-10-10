@@ -1,0 +1,17 @@
+.about-us-container {
+    font-family: $font-familiy;
+    display: inline-flex;
+    flex-direction: row;
+    height: calc(100vh - 90px);
+
+    .title-container {
+        width: 30vw;
+    }
+  
+
+  .about-us-content-container {
+    font-family: $font-familiy;
+    width: 100%;
+
+  }
+}
