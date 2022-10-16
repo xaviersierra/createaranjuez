@@ -8,8 +8,7 @@ layout: default
     <h1>{{ site.data.about.title }}</h1>
     <p>{{ site.data.about.summary}}</p>
   </div>
-  <div>
-     <img alt="group picture">
+  <div class="about-us-banner">     
   </div>
 </div>
 <div class="about-us-content-container">
@@ -17,10 +16,20 @@ layout: default
     <h1>{{ site.data.about.subTitle}}</h1>
   </div>
   {% for item in site.data.about.us %}
-  <div>
-    <h2>{{ item.name }}</h2>
-    <p>{{ item.description }}</p>
-    <span>{{ item.finalThought}}</span>
+  <div class="about-us-detail">
+    <div class="about-us-title">
+      <h2>{{ item.name }}</h2>
+    </div>
+    <div class="about-us-description">
+      {% for paragraph in item.description %}
+      <p>{{ paragraph }}</p><br>
+      {% endfor %}      
+    </div>
+    <div class="about-us-pic {{ item.class }}">
+    </div>
+    <div class="about-us-last">
+      {{ item.finalThought}}
+    </div>    
   </div>
   {% endfor %}  
 </div>

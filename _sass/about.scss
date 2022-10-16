@@ -2,16 +2,119 @@
     font-family: $font-familiy;
     display: inline-flex;
     flex-direction: row;
-    height: calc(100vh - 90px);
-
+    height: calc(100vh - 90px);    
     .title-container {
         width: 30vw;
+        margin-top: -5vh;
+    }
+
+    .about-us-banner {
+      width: 60vw;
+      background-image: url('../images/group.jpg');
     }
   
+}
 
-  .about-us-content-container {
-    font-family: $font-familiy;
-    width: 100%;
+.about-us-content-container {
+  font-family: $font-familiy;
+  
+  .about-us-detail {
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+    font-size: 1.2rem;    
+
+    .about-us-title {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      height: calc(30vh - 90px);
+      
+      background-color: #fae1f4;
+      padding-left: 5vh;
+      
+      h2 {
+        position: relative;
+        top: 90px;        
+        font-size: 2rem;
+        font-weight: 600;
+        font-style: italic;
+        color: #5f497a;
+      }
+
+      h2:after {
+        content: '';
+        width: 75px;
+        height: 2px;
+        display: block;
+        bottom: -10px;
+        background: #009999;
+        position:absolute;
+      }
+    }
+
+    .about-us-description {
+      grid-column: 1 / 4;
+      grid-row: 2;
+      line-height: 1.2rem;
+      font-size: 1.1rem;
+      background-color: #fae1f4;
+      font-weight: 500;
+      padding-left: 5vh;
+      padding-right: 10vh;
+      padding-bottom: 5vh;
+      color: #322640;
+    }
+
+    .about-us-last {
+      grid-column: 2 / 6;
+      grid-row: 3;
+      margin-top: -50px;
+      margin-left: 60px;
+      margin-right: 0;
+      background-color: #fdf7fc;
+      height: 5vh;
+      font-weight: 600;
+      font-size: 1.7rem;
+      font-style: italic;
+      color: #5f497a;
+      padding: 5vw;
+      
+    }
+
+    .about-us-pic {
+      grid-column: 4 / 6;
+      grid-row: 2;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+
+    .elena {
+      background-image: url('../images/elena.jpg');
+    }
+    .carolina {
+      background-image: url('../images/carolina.jpg');
+    }
+    .marilina {
+      background-image: url('../images/marilina.jpg');
+    }
 
   }
+
+  .about-us-detail:nth-child(2) {
+    margin-top: 0 !important;
+  }
+
+  .about-us-detail:nth-child(odd) {
+    .about-us-description {
+      grid-column: 3 / 6;
+    }
+    .about-us-title {
+      grid-column: 3 / 6; 
+    }
+    .about-us-pic {
+      grid-column: 1 / 3;
+      background-position: right bottom;
+    }
+  }
+  
 }
