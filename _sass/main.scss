@@ -184,6 +184,22 @@ nav {
       background-image: url('../images/workshop-service.png');
     }
 
+    div.massage {
+      background-image: url('../images/massage-service.png');
+    }
+
+    div.shiatsu {
+      background-image: url('../images/shiatsu-service.png');
+    }
+
+    div.movement-space {
+      background-image: url('../images/movement-space-service.png');
+    }
+
+    div.encounters {
+      background-image: url('../images/encounter-service.png');
+    }
+
     div {
       height: 40vh;
       background-repeat: no-repeat;
@@ -198,5 +214,28 @@ nav {
         
       }
     }    
+  }
+}
+
+.highlight-phrase {
+  background-color: #fdf7fc;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  color: #5f497a;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: $font-familiy;
+  font-style: italic;
+  
+  p {
+    margin-bottom: 2vh
+  }
+  span {
+    color: #9e8fae;
+    font-style: normal;
+  }
+  span:before {
+    content: "- ";
   }
 }

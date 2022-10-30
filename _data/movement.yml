@@ -5,15 +5,23 @@ summary: |
   También en Créate sentimos la necesidad de dar respuesta a la mamás y los papás en estos momentos de sus vidas, donde las dudas e incertidumbres nos acompañan.
 mainPhrase: |
   En las primeras etapas de la vida, el movimiento es el modo de expresión. Por lo tanto, la vía de comunicación con el entorno. Es, además, el medio de exploración, conocimiento, apropiación, de control y de adaptación al mundo externo.
+mainPhraseAuthor: |
+  Anónimo
 subTitle: Propuestas
 services: 
-  - name: Masaje Bebés.
-  - name: Espacio de movimiento y juego libre inspirado en la pedagogía Pikler. 
-  - name: Shiatsu para bebés.
-  - name: Encuentros grupales de  escucha, orientación y acompañamiento a las mamás y los papás en esta etapa.
+  - service: 
+      name: Masaje Bebés
+      type: massage
+  - service:
+      name: Espacio de movimiento y juego libre inspirado en la pedagogía Pikler. 
+      type: movement-space
+  - service:
+      name: Shiatsu para bebés.
+      type: shiatsu
+  - service:
+      name: Encuentros grupales de escucha, orientación y acompañamiento a las mamás y los papás en esta etapa.
+      type: encounters
 quotes: 
-  - quote: “Cada niño contiene ya en su interior todo lo necesario para crecer” 
-    author: Emmy Pikler.
-  - quote: “Para el bebe, el movimiento representa mucho más que un placer funcional, es una necesidad”
-    authod: Agnes Szanto Feder.
+  - quote: Para el bebe, el movimiento representa mucho más que un placer funcional, es una necesidad
+    author: Agnes Szanto Feder.
 
