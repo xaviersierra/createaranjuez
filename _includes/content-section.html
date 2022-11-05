@@ -1,10 +1,32 @@
 <div class="sections">
 {% for section in include.sections %}
-    <div class="section">
-        <div class="section-header">
+    <div class="section {{ section.name }}-section">
+        <div class="title-container">
             <h1>{{ section.title }}</h1>
+            {% if section.highlight %} 
+            <span>{{ section.highlight }}</span>
+            {% endif %}
         </div>
-        {% include section-texts.html texts=section.texts %} 
+        <div class="section-image">
+        </div>
+        <div class="section-texts">
+            {% for sectionText in section.texts %}
+                <p>{{ sectionText.text }}</p>
+            {% endfor %}
+        </div>
+        
+        <div class="section-quote">
+            {% for quote in section.quotes %}
+                <div class="quote">
+                    <p>{{ quote.quote }}</p>
+                </div>
+                {% if quote.reference %}
+                <div class="reference">
+                    <span>{{ quote.reference }}</span>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 {% endfor %}
 </div>

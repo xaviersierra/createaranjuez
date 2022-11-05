@@ -1,0 +1,42 @@
+.phychomotricity-container {
+    .sections {
+        .phychomotricity-section {
+            .title-container {
+                display: inline-flex;
+                flex-direction: row;
+                height: calc(30vh - 90px) !important;
+
+                h1 {
+                    line-height: 1.1em;
+                }
+
+                h1:after {
+                    bottom: 0;
+                }
+
+                span {
+                    color: #9f92af;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                    height: 68px;
+                    margin-top: auto;
+                    margin-left: -185px;
+                }
+            }
+
+            .section-image {
+                background-image: url('../images/psychomotricity-section.png');
+
+            }
+        }
+
+        .methodology-section {
+
+            .section-image {
+                background-image: url('../images/methodology-section.png');
+
+            }
+        }
+    }
+}
