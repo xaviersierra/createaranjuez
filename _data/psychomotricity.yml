@@ -1,9 +1,16 @@
 title: Psicomotricidad <br>Vivenciada
 highlight: 18 meses - 14 años
-services: 
-  - name: Psicomotricidad educativa. Grupos desde los 18 meses a 14 años.
-  - name: Terapia Psicomotriz individual y/o en pequeño grupo.
-  - name: Psicomotricidad en familia.
+serviceTitle: Propuestas
+services:   
+  - service:
+      name: Psicomotricidad educativa. Grupos desde los 18 meses a 14 años.
+      type: education    
+  - service:
+      name: Terapia Psicomotriz individual y/o en pequeño grupo.
+      type: therapy
+  - service:
+      name: Psicomotricidad en familia.
+      type: family
 sections:   
   - name: phychomotricity
     title: Psicomotricidad <br>Vivenciada

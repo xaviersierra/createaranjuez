@@ -1,9 +1,18 @@
 title: Talleres de juego
+serviceTitle: Propuestas
 services:
-  - name: Instalaciones de juego.
-  - name: Arte y literatura
-  - name: Juegos de exploración, experimentación y sensorialidad.
-  - name: Trazos en movimiento.
+  - service:
+      name: Instalaciones de juego
+      type: game    
+  - service: 
+      name: Arte y literatura
+      type: literature
+  - service: 
+      name: Juegos de exploración, experimentación y sensorialidad
+      type: exploration
+  - service: 
+      name: Trazos en movimiento
+      type: traces
 sections:
   - name: workshop
     title: Talleres de juego

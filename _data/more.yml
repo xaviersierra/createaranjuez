@@ -1,4 +1,18 @@
 title: Otras/Más propuestas
+serviceTitle: Propuestas
+services:
+  - service:
+      name: Masaje infantil
+      type: massage    
+  - service: 
+      name: Shiatsu niños y adultos
+      type: shiatsu
+  - service: 
+      name: Encuentros familiares
+      type: family-encounter
+  - service: 
+      name: Encuentros entre profesionales
+      type: professional-encounter
 sections:
   - name: massages
     title: Masaje infantil

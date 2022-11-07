@@ -1,0 +1,14 @@
+<div class="services-container">
+    <div class="title-container">
+        <h1>
+            {{ include.title }}
+        </h1>
+    </div>
+    <div class="services">
+        {% for service in include.services %}
+        <div class="{{ service.service.type }}">
+            <h1>{{ service.service.name }}</h1>
+        </div>
+        {% endfor %}
+    </div>
+</div>
