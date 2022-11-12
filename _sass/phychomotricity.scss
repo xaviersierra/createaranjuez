@@ -40,3 +40,41 @@
         }
     }
 }
+
+.phychomotricity-note-container {
+    width: 100%;
+    display: grid;
+    min-height: calc(70vh - 90px);
+    grid-template-columns: repeat(6, 1fr);
+
+    .note-image {
+        background-image: url('../images/psychomotricity-note.png');
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .note-text {
+        grid-row: 1;
+        grid-column: 2 / 7;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: $font-familiy;
+        color: #322640;
+        line-height: 1.6em;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        h1 {
+            font-size: 1.3rem;
+            color: #5f497a;
+            font-weight: 800;
+            margin-top: 5vh;
+        }
+
+        p {
+            margin-top: 3vh;
+        }
+        p span {
+            font-weight: 800;
+        }
+    }
+}
