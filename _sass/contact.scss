@@ -8,6 +8,37 @@
             grid-row: 1;
             grid-column: 1;
             width: 20vw;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #322640;
+            height: calc(100vh - 90px);
+
+            .title-container {
+                height: 10vh;
+                padding-left: 0;     
+                margin-top: 5vh;           
+
+                h2 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .email-container{
+                .email {
+                    text-decoration: underline;
+                }
+            }
+
+            .phone-container {
+                .phone {
+                    li {
+                        line-height: 2.5rem;
+                    }
+                    span.name {
+                        font-weight: 800;
+                    }
+                }
+            }
         }
         .contact-banner {
             grid-row: 1;
@@ -18,4 +49,6 @@
             background-size: cover;
         }
     }
+
+    
 }

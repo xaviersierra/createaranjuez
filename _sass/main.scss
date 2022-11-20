@@ -151,7 +151,25 @@ nav {
     bottom: 25px;
     background: #009999;
     position:absolute;
-    
+  }
+  
+  h2 {
+    position: relative;
+    top: 0;    
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5f497a;
+    line-height: 2.0em;
+  }
+
+  h2:after {
+    content: '';
+    width: 75px;
+    height: 2px;
+    display: block;
+    bottom: 0;
+    background: #009999;
+    position:absolute;
   }
 }
 
