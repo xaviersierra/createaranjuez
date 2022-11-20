@@ -1,0 +1,18 @@
+title: Contacto
+contentDescription: ¿Tienes preguntas? Las puertas de Créate están siempre abiertas
+location:
+  title: Vísitanos
+  address: 
+    - Calle Number de la calle, XX
+    - 28000, Aranjuez, Madrid
+email: 
+  title: Escríbenos
+  email: createaranjuez@gmail.com
+phones:
+  title: Llámanos
+  phones:
+    - name: Elena
+      number: 637452660
+    - name: Carolina
+      number: 615577998
+   

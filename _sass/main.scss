@@ -113,23 +113,19 @@ nav {
     margin-right: 3vw;
   }
 
-  li.contact-button>div {
-    height: 30px;
-    width: 126px;
-    text-align: right;
-    color: #fdf7fc;
-    position: relative;
+  li.contact-button {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 3vh;
   }
-
-  li.contact-button::before {
-    width: 111px;
-    height: 43px;
-    display: block;
-    content: '';
-    right: calc(36% - 55px);
-    top: calc(42% - 15px);
-    background: #5f497a;
-    position: absolute;
+  li.contact-button div {
+    background-color: #5f497a;
+    color: #fdf7fc;
+    line-height: 2.5rem;
+    position: relative;
+    height: 4vh;
+    width: fit-content;
+    padding: 0 12px;
     border-radius: 5px;
   }
   
@@ -235,6 +231,9 @@ nav {
     div.professional-encounter {
       background-image: url('../images/professional-encounter-service.png');
     }
+    div.storyteller {
+      background-image: url('../images/storyteller-service.png');
+    }
 
     div {
       height: 40vh;
@@ -250,6 +249,9 @@ nav {
         
       }
     }    
+    .highlight-phrase {
+      height: 15vh;
+    }
   }
 }
 

@@ -6,9 +6,17 @@
     </div>
     <div class="services">
         {% for service in include.services %}
+        {% if service.service %}
         <div class="{{ service.service.type }}">
             <h1>{{ service.service.name }}</h1>
         </div>
+        {% endif %}
+        {% if service.quote %}
+        <div class="highlight-phrase">
+            <p>{{ service.quote.quote }}</p>
+            <span>{{ service.quote.author }}</span>
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>

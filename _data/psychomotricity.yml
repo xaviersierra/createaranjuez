@@ -11,6 +11,9 @@ services:
   - service:
       name: Psicomotricidad en familia.
       type: family
+  - quote:
+      quote: Cada niño contiene ya en su interior todo lo necesario para creder
+      author: Emmy Pikler
 sections:   
   - name: phychomotricity
     title: Psicomotricidad <br>Vivenciada

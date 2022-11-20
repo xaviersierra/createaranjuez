@@ -1,0 +1,21 @@
+.contact-container {
+    .contact-content {
+        padding-left: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content {
+            grid-row: 1;
+            grid-column: 1;
+            width: 20vw;
+        }
+        .contact-banner {
+            grid-row: 1;
+            grid-column: 2;
+            width: 70vw;
+            background-image: url('../images/contact-banner.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

@@ -13,6 +13,9 @@ services:
   - service: 
       name: Encuentros entre profesionales
       type: professional-encounter
+  - service:
+      name: Cuentacuentos
+      type: storyteller
 sections:
   - name: massages
     title: Masaje infantil
