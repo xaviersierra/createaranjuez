@@ -79,6 +79,7 @@ nav {
     text-decoration: none;
     justify-content: center;
     height: 100%;
+    color: #5f497a;
   }
 
   li.logo {
@@ -86,6 +87,12 @@ nav {
     background-color: #fae1f4;
     margin-left: 0;
     margin-right: auto;
+
+    img {
+      height: 60px;
+      margin-top: 15px;
+      margin-left: 5vw;
+    }
   }
 
   li.nav-item.current::after {
@@ -134,6 +141,11 @@ nav {
 .title-container {    
   height: calc(30vh - 90px);
   padding-left: 5vw;
+  
+  :not(:first-of-type) {
+    margin-top: 8vh;
+  }
+
   h1 {
     position: relative;
     top: 0;    

@@ -1,19 +1,25 @@
 #footer {
-    background-color: $menu-background-color;
-    color: $menu-text-color;
-    height: $menu-height;
-    
-    max-width: $content-max-width;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-family: $font-familiy;
+  background-color: $menu-background-color;
+  color: $menu-text-color;
+  height: $menu-height;
   
-    .copyright {
-      text-align: right;
-      line-height: 5.0em;
-      font-size: 1.2rem;
-      color: #9e8fae;
-      padding-right: 3vw;
-    }
+  max-width: $content-max-width;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: $font-familiy;
+  
+  img {
+    height: 60px;
+    margin-left: 5vw;
+    margin-top: 15px;
   }
+
+  .copyright {
+    text-align: right;
+    line-height: 5.0em;
+    font-size: 1.2rem;
+    color: #9e8fae;
+    padding-right: 3vw;
+  }
+}

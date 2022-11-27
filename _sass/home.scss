@@ -20,7 +20,8 @@
         color: #322640;
   
         li {
-          list-style: circle;
+          list-style-image: url('../images/bullet.svg');
+          padding-left: 10px;
           margin-bottom: 10px;
         }
       }
@@ -55,6 +56,7 @@
       left: 5vw;
       font-size: 1.5rem;
       font-weight: 500;
+      line-height: 1.2;
     }
   }
   
