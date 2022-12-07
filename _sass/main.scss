@@ -1,13 +1,15 @@
 $content-max-width: 1920px;
 $menu-background-color: #fdf7fc;
-$menu-text-color: #322640;
-$menu-hover-line: #009999;
+$menu-text-color: #5f497a;
+$base-text-color: #322640;
+$highlight-underline: #009999;
 $menu-height: 90px;
 $menu-font-size: 1.2rem;
 $menu-familty: Poppins, Arial, Helvetica, sans-serif;
 $font-weight: 500;
 $banner-text-color: #fdf7fc;
 $font-familiy: Poppins, Arial, Helvetica, sans-serif;
+$emphasis-background-color: #fae1f4;
 
 body {
   font-family: $font-familiy;
@@ -79,12 +81,12 @@ nav {
     text-decoration: none;
     justify-content: center;
     height: 100%;
-    color: #5f497a;
+    color: $menu-text-color;
   }
 
   li.logo {
     width: 262px;
-    background-color: #fae1f4;
+    background-color: $emphasis-background-color;
     margin-left: 0;
     margin-right: auto;
 
@@ -101,7 +103,7 @@ nav {
     display: block;
     bottom: 25px;
     right: calc(45% - 27px);
-    background: #009999;
+    background: $highlight-underline;
     position: absolute;
     content: '';
   }
@@ -112,7 +114,7 @@ nav {
     display: block;
     bottom: 25px;
     right: calc(45% - 27px);
-    background: #009999;
+    background: $highlight-underline;
     position: absolute;
     content: '';
   }
@@ -126,7 +128,7 @@ nav {
     margin-top: 3vh;
   }
   li.contact-button div {
-    background-color: #5f497a;
+    background-color: $menu-text-color;
     color: #fdf7fc;
     line-height: 2.5rem;
     position: relative;
@@ -139,7 +141,6 @@ nav {
 }
 
 .title-container {    
-  height: calc(30vh - 90px);
   padding-left: 5vw;
   
   :not(:first-of-type) {
@@ -151,7 +152,7 @@ nav {
     top: 0;    
     font-size: 5rem;
     font-weight: 700;
-    color: #5f497a;
+    color: $menu-text-color;
     line-height: 2.0em;
   }
 
@@ -161,7 +162,7 @@ nav {
     height: 2px;
     display: block;
     bottom: 25px;
-    background: #009999;
+    background: $highlight-underline;
     position:absolute;
   }
   
@@ -170,7 +171,7 @@ nav {
     top: 0;    
     font-size: 3rem;
     font-weight: 700;
-    color: #5f497a;
+    color: $menu-text-color;
     line-height: 2.0em;
   }
 
@@ -180,7 +181,7 @@ nav {
     height: 2px;
     display: block;
     bottom: 0;
-    background: #009999;
+    background: $highlight-underline;
     position:absolute;
   }
 }
@@ -290,7 +291,7 @@ nav {
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: 5vh;
-  color: #5f497a;
+  color: $menu-text-color;
   font-size: 1.7rem;
   font-weight: 600;
   font-family: $font-familiy;

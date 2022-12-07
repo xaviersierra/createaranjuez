@@ -29,7 +29,7 @@
       grid-row: 1;
       height: calc(30vh - 90px);
       
-      background-color: #fae1f4;
+      background-color: $emphasis-background-color;
       padding-left: 5vh;
       
       h2 {
@@ -38,7 +38,7 @@
         font-size: 2rem;
         font-weight: 600;
         font-style: italic;
-        color: #5f497a;
+        color: $menu-text-color;
       }
 
       h2:after {
@@ -47,7 +47,7 @@
         height: 2px;
         display: block;
         bottom: -10px;
-        background: #009999;
+        background: $highlight-underline;
         position:absolute;
       }
     }
@@ -57,12 +57,12 @@
       grid-row: 2;
       line-height: 1.2rem;
       font-size: 1.1rem;
-      background-color: #fae1f4;
+      background-color: $emphasis-background-color;
       font-weight: 500;
       padding-left: 5vh;
       padding-right: 10vh;
       padding-bottom: 5vh;
-      color: #322640;
+      color: $base-text-color;
     }
 
     .about-us-last {
@@ -76,7 +76,7 @@
       font-weight: 600;
       font-size: 1.7rem;
       font-style: italic;
-      color: #5f497a;
+      color: $menu-text-color;
       padding: 5vw;
       
     }

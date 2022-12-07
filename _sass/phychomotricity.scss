@@ -1,30 +1,6 @@
 .phychomotricity-container {
     .sections {
         .phychomotricity-section {
-            .title-container {
-                display: inline-flex;
-                flex-direction: row;
-                height: calc(30vh - 90px) !important;
-
-                h1 {
-                    line-height: 1.1em;
-                }
-
-                h1:after {
-                    bottom: 0;
-                }
-
-                span {
-                    color: #9f92af;
-                    font-size: 3rem;
-                    font-weight: 600;
-                    margin-bottom: 0px;
-                    height: 68px;
-                    margin-top: auto;
-                    margin-left: -185px;
-                }
-            }
-
             .section-image {
                 background-image: url('../images/psychomotricity-section.png');
 
@@ -32,7 +8,6 @@
         }
 
         .methodology-section {
-
             .section-image {
                 background-image: url('../images/methodology-section.png');
 
@@ -59,13 +34,13 @@
         font-size: 1.2rem;
         font-weight: 500;
         font-family: $font-familiy;
-        color: #322640;
+        color: $base-text-color;
         line-height: 1.6em;
         padding-left: 5vw;
         padding-right: 5vw;
         h1 {
             font-size: 1.3rem;
-            color: #5f497a;
+            color: $menu-text-color;
             font-weight: 800;
             margin-top: 5vh;
         }
