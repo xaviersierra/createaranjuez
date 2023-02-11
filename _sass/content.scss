@@ -6,7 +6,7 @@
 .sections {
     
     .section {
-        min-height: calc(100vh - 90px);
+        /*min-height: calc(100vh - 90px);*/
         width: 100%;
         line-height: 1.8em;
         .title-container {
@@ -52,6 +52,7 @@
                 font-family: $font-familiy;
                 font-style: italic;
                 line-height: 1.6rem;
+                position: relative;
                 .quote span {
                     font-weight: 800;
                 }
@@ -65,15 +66,17 @@
                 .reference:before {
                     content: "- ";
                 }
-                /*.quote:after {
-                    content: '';
-                    position: absolute;
-                    background-image: url('../images/quote.svg');
-                    width: 100px;
-                    height: 100px;
-                    background-repeat: no-repeat;
-                    top: 0
-                }*/
+                
+            }
+            .section-quote::after {
+                content: '';
+                position: absolute;
+                background-image: url('../images/quote.svg');
+                width: 100vw;
+                height: 100px;
+                background-repeat: no-repeat;
+                top: 2.5vw;
+                left: 3vw;
             }
         }
         

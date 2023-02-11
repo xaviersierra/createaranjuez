@@ -39,6 +39,7 @@
     width: 100%;
     height: calc(100vh - 90px);
     background-image: url("../images/home-banner.png");
+    background-repeat: no-repeat;
     color: $banner-text-color;
     font-family: $font-familiy;
     

@@ -1,0 +1,100 @@
+
+nav {
+    height: $menu-height;
+    background-color: $menu-background-color;
+    max-width: $content-max-width;
+    width: 100%;
+    color: $menu-text-color;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      font-size: $menu-font-size
+    }
+  
+    li {
+      height: 100%;
+      display: inline-block;
+      padding: 0 11px;
+      overflow: visible;
+      position: relative;
+      font-weight: 500;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+  
+    li a {
+      text-align: center;
+      text-decoration: none;      
+      justify-content: center;      
+      height: 100%;
+      color: $menu-text-color;
+    }
+    li.nav-item a {
+        display: flex;
+        align-items: center;
+    }
+  
+    li.logo {
+      width: 262px;
+      background-color: $emphasis-background-color;
+      margin-left: 0;
+      margin-right: auto;
+  
+      img {
+        height: 60px;
+        margin-top: 15px;
+        margin-left: 5vw;
+      }
+    }
+  
+    li.nav-item.current::after, li.nav-item:hover:after {
+      width: 75px;
+      height: 2px;
+      display: block;
+      bottom: 25px;
+      right: calc(45% - 27px);
+      background: $highlight-underline;
+      position: absolute;
+      content: '';
+    }
+    li:last-child {
+      margin-right: 3vw;
+    }
+  
+    li.contact-button {
+      text-align: center;
+      padding-right: 0;
+      margin-top: 3vh;
+    }
+    li.contact-button div {
+      background-color: $menu-text-color;
+      color: #fdf7fc;
+      line-height: 2.5rem;
+      position: relative;
+      height: 4vh;
+      width: fit-content;
+      padding: 0 12px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 1336px) {
+    nav {        
+        li.nav-item.current::after, li.nav-item:hover:after {
+            bottom: 20px;
+        }
+    }
+  }

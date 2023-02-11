@@ -1,15 +1,18 @@
 $content-max-width: 1920px;
-$menu-background-color: #fdf7fc;
-$menu-text-color: #5f497a;
 $base-text-color: #322640;
 $highlight-underline: #009999;
-$menu-height: 90px;
-$menu-font-size: 1.2rem;
-$menu-familty: Poppins, Arial, Helvetica, sans-serif;
 $font-weight: 500;
 $banner-text-color: #fdf7fc;
 $font-familiy: Poppins, Arial, Helvetica, sans-serif;
 $emphasis-background-color: #fae1f4;
+
+// TODO refactor this variables names to don't need the menu preffix
+$menu-background-color: #fdf7fc;
+$menu-height: 90px;
+$menu-font-size: 1.2rem;
+$menu-familty: Poppins, Arial, Helvetica, sans-serif;
+$menu-text-color: #5f497a;
+
 
 body {
   font-family: $font-familiy;
@@ -39,105 +42,6 @@ div#container::before {
   background-color: $menu-background-color;
   height: $menu-height;
   content: '';
-}
-
-nav {
-  height: $menu-height;
-  background-color: $menu-background-color;
-  max-width: $content-max-width;
-  width: 100%;
-  color: $menu-text-color;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-size: $menu-font-size
-  }
-
-  li {
-    height: 100%;
-    display: inline-block;
-    padding: 0 11px;
-    overflow: visible;
-    line-height: 5.0em;
-    position: relative;
-    font-weight: 500;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-  }
-
-  li a {
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    height: 100%;
-    color: $menu-text-color;
-  }
-
-  li.logo {
-    width: 262px;
-    background-color: $emphasis-background-color;
-    margin-left: 0;
-    margin-right: auto;
-
-    img {
-      height: 60px;
-      margin-top: 15px;
-      margin-left: 5vw;
-    }
-  }
-
-  li.nav-item.current::after {
-    width: 75px;
-    height: 2px;
-    display: block;
-    bottom: 25px;
-    right: calc(45% - 27px);
-    background: $highlight-underline;
-    position: absolute;
-    content: '';
-  }
-
-  li.nav-item:hover:after {
-    width: 75px;
-    height: 2px;
-    display: block;
-    bottom: 25px;
-    right: calc(45% - 27px);
-    background: $highlight-underline;
-    position: absolute;
-    content: '';
-  }
-  li:last-child {
-    margin-right: 3vw;
-  }
-
-  li.contact-button {
-    text-align: center;
-    padding-right: 0;
-    margin-top: 3vh;
-  }
-  li.contact-button div {
-    background-color: $menu-text-color;
-    color: #fdf7fc;
-    line-height: 2.5rem;
-    position: relative;
-    height: 4vh;
-    width: fit-content;
-    padding: 0 12px;
-    border-radius: 5px;
-  }
-  
 }
 
 .title-container {    
