@@ -3,8 +3,10 @@ title: Créate es
 layout: default
 ---
 <div class="home-banner">
-  <h1>{{ site.data.home.banner.title }}</h1>
-  <h2>{{ site.data.home.banner.subTitle }}</h2>
+  <div>
+    <h1>{{ site.data.home.banner.title }}</h1>
+    <h2>{{ site.data.home.banner.subTitle }}</h2>
+  </div>
 </div>
 
 <div class="home-content">

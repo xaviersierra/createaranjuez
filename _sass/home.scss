@@ -27,6 +27,7 @@
       }
       .bullet-photo {
         background-image: url('../images/home-content.png');
+        background-repeat: no-repeat;
         grid-column: 2;
         grid-row: 1;
         border-radius: 5px;
@@ -43,21 +44,22 @@
     color: $banner-text-color;
     font-family: $font-familiy;
     
-    h1 {
+    div {
       position: absolute;
       top: calc(35vh - 90px);
       left: 5vw;
-      font-size: 9rem;
-      font-weight: 700;
-    }
-  
-    h2 {
-      position: absolute;
-      top: calc(75vh - 90px);
-      left: 5vw;
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.2;
-    }
-  }
+        
+      h1 {
+        font-size: 9rem;
+        font-weight: 700;
+      }
+    
+      h2 {
+        margin-top: 10vh;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }  
+}
   

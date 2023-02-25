@@ -171,17 +171,16 @@ div#container::before {
     }
 
     div {
-      height: 40vh;
+      height: 20vw;
       background-repeat: no-repeat;
-      margin: 50px;
+      margin: 2vw;
       background-size: 100%;
       h1 {
         margin-left: 3vw;
         margin-top: 15vw;
         color: #fdf7fc;
         font-size: 1.3rem;
-        font-weight: 700;
-        
+        font-weight: 700;        
       }
     }    
     .highlight-phrase {
