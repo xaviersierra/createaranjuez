@@ -13,6 +13,7 @@
             h1 {
                 line-height: 1.1em;
                 span {
+                    display: inline-block;
                     color: #9f92af;
                     font-size: 3rem;
                     font-weight: 600;
@@ -26,13 +27,13 @@
             min-height: calc(100vh - 90px);
             margin-top: 5vh;
             .section-texts {
-                width: 40vw;
-                padding-left: 10vh;
-                padding-right: 10vh;
+                width: 50vw;
+                padding-left: 5vw;
+                padding-right: 5vw;
                 color: $base-text-color;
                 font-size: 1.2rem;
-
                 font-weight: 500;
+
                 p {
                     margin-top: 10px;
                 }
@@ -83,9 +84,7 @@
         .section-image {            
             background-repeat: no-repeat;
             background-position: top right;
-            background-size: 40%;
-        }
-
-       
+            background-size: 50vw;
+        }       
     }
 }

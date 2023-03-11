@@ -171,13 +171,15 @@ div#container::before {
     }
 
     div {
+      position: relative;
       height: 20vw;
       background-repeat: no-repeat;
       margin: 2vw;
       background-size: 100%;
       h1 {
-        margin-left: 3vw;
-        margin-top: 15vw;
+        position: absolute;
+        left: 3vw;
+        bottom: 3vh;
         color: #fdf7fc;
         font-size: 1.3rem;
         font-weight: 700;        
