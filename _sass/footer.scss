@@ -2,8 +2,6 @@
   background-color: $menu-background-color;
   color: $menu-text-color;
   height: $menu-height;
-  
-  max-width: $content-max-width;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

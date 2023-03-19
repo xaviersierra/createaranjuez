@@ -4,6 +4,7 @@
     flex-direction: row;
     height: calc(100vh - 90px);
     width: 100vw;
+    overflow: hidden;
     .title-container {
         min-width: 460px;
         width: 35vw;
